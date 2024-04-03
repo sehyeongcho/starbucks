@@ -1,11 +1,15 @@
-// 2. This code loads the IFrame Player API code asynchronously.
+/**
+ * 메인 페이지(index.html)의 YOUTUBE VIDEO 섹션에서 유튜브 영상을 재생하기 위한 파일입니다.
+ */
+
+// This code loads the IFrame Player API code asynchronously.
 var tag = document.createElement('script');
 
 tag.src = "https://www.youtube.com/iframe_api";
 var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-// 3. This function creates an <iframe> (and YouTube player)
+// This function creates an <iframe> (and YouTube player)
 //    after the API code downloads.
 function onYouTubeIframeAPIReady() {
   // <div id="player"></div>

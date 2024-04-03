@@ -1,3 +1,8 @@
+/**
+ * 메인 페이지(index.html)에서 발생하는 동적인 상호 작용을 처리하는 파일입니다.
+ */
+
+// 스크롤 이벤트가 발생했을 때 스크롤 위치에 따라 배지, 페이지의 상단으로 이동하는 버튼을 숨기거나 보이게 합니다.
 const badgeEl = document.querySelector('header .badges');
 const toTopEl = document.querySelector('#to-top')
 
@@ -28,6 +33,7 @@ window.addEventListener('scroll', _.throttle(function () {
 }, 300));
 // _.throttle(함수, 시간)
 
+// 페이지의 상단으로 이동하는 버튼을 클릭했을 때 스크롤 위치를 조정하여 상단으로 갈 수 있게 합니다.
 toTopEl.addEventListener('click', function () {
   gsap.to(window, .7, {
     scrollTo: 0
@@ -35,6 +41,7 @@ toTopEl.addEventListener('click', function () {
 });
 
 
+// VISUAL 섹션의 타이틀, 컵, 스푼 이미지가 일정한 딜레이를 가지고 순차적으로 표시되게 합니다.
 const fadeEls = document.querySelectorAll('.visual .fade-in');
 fadeEls.forEach(function (fadeEl, index) {
   // gsap.to(요소, 지속시간, 옵션);
@@ -45,6 +52,7 @@ fadeEls.forEach(function (fadeEl, index) {
 });
 
 
+// NOTICE, AWARDS 섹션에 Swiper 라이브러리를 사용하여 공지 사항, 프로모션, 수상 내역에 스와이퍼 기능을 적용합니다.
 // new Swiper(선택자, 옵션)
 new Swiper('.notice-line .swiper-container', {
   direction: 'vertical',
@@ -80,6 +88,7 @@ new Swiper('.awards .swiper-container', {
 });
 
 
+// 스타벅스 프로모션 탭의 화살표 버튼을 클릭했을 때 프로모션을 숨기거나 보이게 합니다.
 const promotionEl = document.querySelector('.promotion');
 const promotionToggleBtn = document.querySelector('.toggle-promotion');
 let isHidePromotion = false;
@@ -103,6 +112,7 @@ function random(min, max) {
 }
 
 
+// YOUTUBE 섹션에서 로고가 생동감 있게 떠 있게 하기 위해 랜덤 함수를 사용하여 애니메이션을 적용합니다.
 function floatingObject(selector, delay, size) {
   // gsap.to(요소, 시간, 옵션);
   gsap.to(
@@ -122,6 +132,7 @@ floatingObject('.floating2', .5, 15);
 floatingObject('.floating3', 1.5, 20);
 
 
+// SEASON PRODUCT, RESERVE COFFEE, PICK YOUR FAVORITE, FIND THE STORE 섹션에 ScrollMagic 라이브러리를 사용하여 특정 요소가 뷰포트의 80% 위치에 도달했을 때 show 클래스를 추가합니다.
 const spyEls = document.querySelectorAll('section.scroll-spy');
 spyEls.forEach(function (spyEl) {
   new ScrollMagic
