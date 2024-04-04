@@ -1,8 +1,19 @@
 /*
   메인 페이지(index.html)에 적용되는 CSS 파일입니다.
-  VISUAL, NOTICE, REWARDS, YOUTUBE VIDEO, SEASON PRODUCT, RESERVE COFFEE, PICK YOUR FAVORITE, RESERVE STORE, FIND THE STORE, AWARDS 섹션으로 구성되어 있습니다.
-  그리고 사용자가 클릭할 시 페이지의 상단으로 이동하는 버튼의 스타일이 지정되어 있습니다.
-*/
+
+  - VISUAL
+  - NOTICE
+  - REWARDS
+  - YOUTUBE VIDEO
+  - SEASON PRODUCT
+  - RESERVE COFFEE
+  - PICK YOUR FAVORITE
+  - RESERVE STORE
+  - FIND THE STORE
+  - AWARDS
+
+  마지막으로, 사용자가 클릭할 시 페이지의 상단으로 이동하는 버튼의 스타일이 지정되어 있습니다.
+ */
 
 /* VISUAL */
 .visual {
@@ -173,7 +184,6 @@
 
 .notice .promotion .swiper-container {
   width: calc(819px * 3 + 20px);
-  /* width: calc(100% - 50px); */
   height: 553px;
   position: absolute;
   top: 40px;

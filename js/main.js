@@ -112,7 +112,7 @@ function random(min, max) {
 }
 
 
-// YOUTUBE 섹션에서 로고가 생동감 있게 떠 있게 하기 위해 랜덤 함수를 사용하여 애니메이션을 적용합니다.
+// YOUTUBE VIDEO 섹션에서 로고가 생동감 있게 떠 있게 하기 위해 랜덤 함수를 사용하여 애니메이션을 적용합니다.
 function floatingObject(selector, delay, size) {
   // gsap.to(요소, 시간, 옵션);
   gsap.to(
@@ -132,7 +132,7 @@ floatingObject('.floating2', .5, 15);
 floatingObject('.floating3', 1.5, 20);
 
 
-// SEASON PRODUCT, RESERVE COFFEE, PICK YOUR FAVORITE, FIND THE STORE 섹션에 ScrollMagic 라이브러리를 사용하여 특정 요소가 뷰포트의 80% 위치에 도달했을 때 show 클래스를 추가합니다.
+// SEASON PRODUCT, RESERVE COFFEE, PICK YOUR FAVORITE, FIND THE STORE 섹션에 ScrollMagic 라이브러리를 사용하여 특정 요소가 뷰포트의 80% 위치에 도달했을 때 show 클래스를 추가합니다. 이는 사용자가 스크롤을 움직였을 때 이미지가 좌우에서 나타나고 사라지게 하기 위함입니다.
 const spyEls = document.querySelectorAll('section.scroll-spy');
 spyEls.forEach(function (spyEl) {
   new ScrollMagic
