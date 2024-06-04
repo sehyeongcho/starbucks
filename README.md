@@ -12,3 +12,6 @@ Starbucks 웹 사이트 클론을 통해 웹의 구조를 담당하는 HTML, 콘
 - HTML
 - CSS
 - JavaScript
+
+## 학습 내용
+[starbucks wiki](https://github.com/sehyeongcho/starbucks/wiki)
